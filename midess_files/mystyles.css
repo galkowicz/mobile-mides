@@ -150,9 +150,37 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
-
+.burger-menu-icon {
+    display: inline-block;
+    padding: 2rem;
+}
 .icon-three-bars {
     width: 0.75em;
     font-size: 32px;
-    color: #ae9a64;
+    color: #c9b691;
+}
+.icon-cross {
+    width: 0.75em;
+    font-size: 32px;
+    color: #c9b691;
+    display: none;
+}
+.burger-menu-icon.menuClosed .icon-three-bars {
+    display: inline-block;
+}
+.burger-menu-icon.menuOpen #menuContiner {
+    display: block;
+}
+.burger-menu-icon.menuOpen .icon-three-bars {
+    display: none;
+}
+.burger-menu-icon.menuOpen .icon-cross {
+    display: inline-block;
+}
+#menuContiner{
+    position: absolute;
+    left: 3rem;
+}
+.top-menu {
+    width: 15rem;
 }

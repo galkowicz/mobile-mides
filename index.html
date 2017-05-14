@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./midess_files/jquery.mobile-1.3.2.min.css">
     <link rel="stylesheet" href="./midess_files/mides-theme.min.css">
     <link rel="stylesheet" href="./midess_files/mystyles.css">
+    <link rel="stylesheet" href="./midess_files/animations.css">
 
     <script src="./midess_files/jquery-1.8.3.min.js"></script>
     <script src="./midess_files/jquery.mobile-1.3.2.min.js"></script>
@@ -39,7 +40,7 @@
 <!--main hebrew page-->
 <div data-role="page" id="main-hebrew" data-theme="a" data-title="מידס" data-url="main-hebrew" tabindex="0"
      class="ui-page ui-body-a ui-page-active" style="min-height: 667px;">
-	<div class="burger-menu-icon">
+	<div class="burger-menu-icon menuClosed">
 		<a href="#">
 			<svg class="icon icon-three-bars">
 				<use xlink:href="#icon-three-bars"></use>
@@ -48,6 +49,46 @@
 				<use xlink:href="#icon-cross"></use>
 			</svg>
 		</a>
+		<nav id="menuContiner">
+			<ul class="top-menu">
+				<li><a data-role="button" href="tel:0777296817" data-corners="true" data-shadow="true" data-iconshadow="true"
+					   data-wrapperels="span" data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span
+						class="ui-btn-inner"><span class="ui-btn-text">חייג אלינו</span></span>
+				</a></li>
+				<li>			<a data-role="button" href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site"
+								   data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
+								   class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">שלח לנו מייל</span></span>
+				</a></li>
+				<li>			<a data-role="button"
+								   href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C"
+								   data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
+								   class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">מפה</span></span>
+				</a></li>
+				<li>			<a data-role="button"
+								   href="waze://?q=%D7%A7%D7%99%D7%91%D7%95%D7%A5 %D7%91%D7%A8%D7%95%D7%A8 %D7%97%D7%99%D7%9C"
+								   data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
+								   class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">WAZE</span></span>
+				</a></li>
+				<li>			<a data-role="button" data-transition="fade" href="#menu-hebrew" id="hebMenuButton"
+								   data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span"
+								   data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">תפריט</span></span>
+				</a></li>
+				<li>			<a data-role="button" href="http://www.mides.co.il//?ViewFullSite=true" rel="external" data-corners="true"
+								   data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
+								   class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">לאתר הבית </span></span>
+				</a></li>
+				<li>			<a data-role="button" data-transition="fade" href="http://mides.internetic.mobi/#main-english"
+								   data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
+								   class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
+						class="ui-btn-text">English</span></span>
+				</a></li>
+			</ul>
+		</nav>
 	</div>
 
     <div data-role="content" class="ui-content wrapper" role="main">
@@ -64,42 +105,7 @@
 עכשיו, פקחו את העיניים והביטו סביב: הגעתם למסעדת מידס בברור חיל
 <br>
 
-</p> <a data-role="button" href="tel:0777296817" data-corners="true" data-shadow="true" data-iconshadow="true"
-        data-wrapperels="span" data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span
-                        class="ui-btn-inner"><span class="ui-btn-text">חייג אלינו</span></span>
-			</a>
-			<a data-role="button" href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site"
-               data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
-               class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">שלח לנו מייל</span></span>
-			</a>
-			<a data-role="button"
-               href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C"
-               data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
-               class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">מפה</span></span>
-			</a>
-			<a data-role="button"
-               href="waze://?q=%D7%A7%D7%99%D7%91%D7%95%D7%A5 %D7%91%D7%A8%D7%95%D7%A8 %D7%97%D7%99%D7%9C"
-               data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
-               class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">WAZE</span></span>
-			</a>
-			<a data-role="button" data-transition="fade" href="#menu-hebrew" id="hebMenuButton"
-               data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span"
-               data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">תפריט</span></span>
-			</a>
-			<a data-role="button" href="http://www.mides.co.il//?ViewFullSite=true" rel="external" data-corners="true"
-               data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
-               class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">לאתר הבית </span></span>
-			</a>
-			<a data-role="button" data-transition="fade" href="http://mides.internetic.mobi/#main-english"
-               data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"
-               class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span class="ui-btn-inner"><span
-                    class="ui-btn-text">English</span></span>
-			</a>
+</p>
 			<p id="slogen2">
 				<br> ימיי ושעות פעילות:
 				<br> ג', ד', ה' – החל מן השעה 18:00

@@ -21,7 +21,7 @@ div {
 
 #main-hebrew {
     text-align: right;
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 #main-english {
@@ -168,7 +168,7 @@ Single-colored icons can be modified like so:
 .burger-menu-icon.menuClosed .icon-three-bars {
     display: inline-block;
 }
-.burger-menu-icon.menuOpen #menuContiner {
+.burger-menu-icon.menuOpen #menuContainer {
     display: block;
 }
 .burger-menu-icon.menuOpen .icon-three-bars {
@@ -177,10 +177,29 @@ Single-colored icons can be modified like so:
 .burger-menu-icon.menuOpen .icon-cross {
     display: inline-block;
 }
-#menuContiner{
+#menuContainer{
     position: absolute;
     left: 3rem;
 }
 .top-menu {
     width: 15rem;
+}
+.menuLink.menuLink.menuLink {
+    padding: 0 17px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    color: #c9b691;
+    text-decoration: none;
+}
+.s-item {
+    opacity: 0.95;
+    height: 48px;
+    line-height: 48px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    cursor: pointer;
+    position: relative;
+    color: #c9b691;
+    list-style-type: none;
 }

@@ -1,45 +1,25 @@
-.c-menu {
-    position: absolute;
-    z-index: 200;
-    transition: transform 0.3s;
-}
-
-/**
- * Mask component
- */
-
 .c-mask {
-    display: none;
     z-index: 100;
     left: 0;
     width: 0;
     height: 0;
     background-color: #000;
     opacity: 0;
-    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+    transition: opacity 0.5s, width 0s 0.3s, height 0s 0.3s;
 }
-
 .menuOpen .c-mask {
     opacity: 1;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
 }
-
-.c-menu--push-top .c-menu__close {
-    display: inline-block;
-    margin-right: 12px;
-    padding: 0 24px;
-    height: 60px;
-    line-height: 60px;
+.c-menu {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    position: absolute;
+    transition: all .4s ease;
+    visibility: hidden;
 }
-
-.c-menu--slide-top {
-    /*height: 0;*/
-    -webkit-transition:height 300ms ease-in;
-    -moz-transition:height 300ms ease-in;
-    -o-transition:height 300ms ease-in;
-    transition:height 300ms ease-in;
-}
-
-.menuOpen .c-menu--slide-top {
-    /*height: 22rem;*/
+.burger-menu-icon.menuOpen .c-menu--slide-top {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    visibility: inherit;
 }

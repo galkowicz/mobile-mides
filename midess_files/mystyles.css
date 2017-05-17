@@ -13,6 +13,7 @@ div {
 
 .wrapper {
     background: #8e9064;
+    margin-top: 6rem;
 }
 
 .nicer-font {
@@ -21,7 +22,8 @@ div {
 
 #main-hebrew {
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    display: block;
 }
 
 #main-english {
@@ -179,13 +181,12 @@ Single-colored icons can be modified like so:
 }
 #menuContainer{
     position: absolute;
-    left: 3rem;
 }
 .top-menu {
-    width: 15rem;
+    width: 17rem;
 }
 .menuLink.menuLink.menuLink {
-    padding: 0 17px;
+    padding: 0 18px;
     float: left;
     width: 100%;
     box-sizing: border-box;
@@ -194,12 +195,20 @@ Single-colored icons can be modified like so:
 }
 .s-item {
     opacity: 0.95;
-    height: 48px;
-    line-height: 48px;
+    height: 3.3rem;
+    line-height: 3.3rem;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(204, 204, 204, 1);
     cursor: pointer;
-    position: relative;
     color: #c9b691;
     list-style-type: none;
+}
+#menu-hebrew {
+    top: 6rem;
+}
+.header {
+    position: fixed;
+    right: 0;
+    background: white;
+    width: 100%;
 }

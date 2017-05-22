@@ -3,7 +3,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--<base href="http://mides.internetic.mobi/">-->
     <base href=".">
 
     <title>מידס</title>
@@ -41,6 +40,7 @@
 <div data-role="page" id="main-hebrew" data-title="מידס" data-url="main-hebrew" tabindex="0"
 	 class="ui-page-active">
 	<header class="header">
+		<div class="mides-logo"><span>מידס</span></div>
 		<div class="burger-menu-icon menuClosed">
 			<a href="#">
 				<svg class="icon icon-three-bars">
@@ -52,26 +52,38 @@
 			</a>
 			<nav id="menuContainer" class="c-mask">
 				<ul class="top-menu c-menu c-menu--slide-top">
-					<li class="s-item"><a href="http://mides.internetic.mobi/#main-hebrew" class="menuLink">ראשי
+					<li class="s-item"><a lang="he" href="#main-hebrew" class="menuLink">ראשי
+					</a><a lang="en" href="#main-hebrew" class="menuLink">Main
 					</a></li>
-					<li class="s-item"><a href="tel:086803441" class="menuLink">חייג אלינו
+					<li class="s-item"><a lang="he" href="tel:086803441" class="menuLink">חייג אלינו
+					</a><a lang="en" href="tel:086803441" class="menuLink">Dail us
 					</a></li>
-					<li class="s-item"><a href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site"
+					<li class="s-item"><a lang="he"
+										  href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site"
 										  class="menuLink">שלח לנו מייל
+					</a><a lang="en" href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site"
+						   class="menuLink">Email us
 					</a></li>
-					<li class="s-item"><a
-							href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C"
-							class="menuLink">מפה
+					<li class="s-item"><a lang="he"
+										  href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C"
+										  class="menuLink">מפה
+					</a><a lang="en"
+						   href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C"
+						   class="menuLink">Map
 					</a></li>
 					<li class="s-item"><a
 							href="waze://?q=%D7%A7%D7%99%D7%91%D7%95%D7%A5 %D7%91%D7%A8%D7%95%D7%A8 %D7%97%D7%99%D7%9C"
 							class="menuLink">WAZE
 					</a></li>
-					<li class="s-item"><a href="#menu-hebrew" id="hebMenuButton"
+					<li class="s-item"><a lang="he" href="#menu-hebrew" id="hebMenuButton"
 										  class="menuLink">תפריט
+					</a><a lang="en" href="http://mides.co.il/index.php/menu?ViewFullSite=true"
+						   class="menuLink">Menu
 					</a></li>
-					<li class="s-item"><a href="http://mides.internetic.mobi/#main-english"
-										  class="menuLink">English
+					<li class="s-item changeLanguage"><a lang="he" href="#main-english"
+														 class="menuLink">English
+					</a><a lang="en" href="#main-english"
+						   class="menuLink">עברית
 					</a></li>
 				</ul>
 			</nav>
@@ -83,7 +95,7 @@
 		<img class="img" src="./midess_files/1.jpg">
 		<img class="img" src="./midess_files/2.jpg">
 
-		<span dir="rtl"> <img class="img" src="./midess_files/logo.png">
+		<span lang="he" dir="rtl"> <img class="img" src="./midess_files/logo.png">
 							<hr>
 							<p id="slogen">
 
@@ -117,56 +129,17 @@
 		<img class="img" src="./midess_files/6.jpg">
 		<img class="img" src="./midess_files/7.jpg">
 
-		<a data-role="button" onclick="scrollTo(0,0)" data-corners="true" data-shadow="true" data-iconshadow="true"
+		<a lang="he" data-role="button" onclick="scrollTo(0,0)" data-corners="true" data-shadow="true" data-iconshadow="true"
 		   data-wrapperels="span" data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span
 				class="ui-btn-inner"><span class="ui-btn-text">חזור למעלה</span></span></a>
+		<a lang="en" data-role="button" onclick="scrollTo(0,0)" data-corners="true" data-shadow="true" data-iconshadow="true"
+		   data-wrapperels="span" data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all"><span
+				class="ui-btn-inner"><span class="ui-btn-text">Back to top</span></span></a>
 
 	</div>
 
 </div>
 
-<!--main english page-->
-<div data-role="page" id="main-english" data-theme="a" data-title="mides" data-url="main-english">
-
-    <div data-role="content" class="wrapper">
-			<span dir="rtl"> <img class="img" src="./midess_files/logo.png">
-					<hr>
-					<p id="slogen">
-						<b>Mides<br>
-					</b></p><b>
-					<p id="slogen2">
-
-					</p> <a data-role="button" href="tel:086803441">Dial us</a>
-					 <a data-role="button" href="mailto:midesbrazil@gmail.com?subject=Contact%20From%20Mobile%20Site">Email us</a>
-					  <a data-role="button"
-                         href="http://maps.google.com/maps?z=10&amp;q=%D7%A7%D7%99%D7%91%D7%95%D7%A5%20%D7%91%D7%A8%D7%95%D7%A8%20%D7%97%D7%99%D7%9C">Map</a>
-					   <a data-role="button"
-                          href="waze://?q=%D7%A7%D7%99%D7%91%D7%95%D7%A5 %D7%91%D7%A8%D7%95%D7%A8 %D7%97%D7%99%D7%9C">WAZE</a>
-					   <a data-role="button" href="http://mides.co.il/index.php/menu?ViewFullSite=true" rel="external">Menu</a>
-					   <a data-role="button" data-transition="fade" href="http://mides.internetic.mobi/#main-hebrew">עברית</a>
-					<span dir="rtl">
-				<div dir="ltr" align="left">
-								<strong><br>
-								</strong></div>
-				<div dir="ltr" align="left" class="style2"></div>
-				</span>
-			<p id="slogen2">
-			</p>
-			<hr>
-			<img class="img" src="./midess_files/1.jpg">
-			<img class="img" src="./midess_files/2.jpg">
-			<img class="img" src="./midess_files/3.jpg">
-			<img class="img" src="./midess_files/4.jpg">
-			<img class="img" src="./midess_files/5.jpg">
-			<img class="img" src="./midess_files/6.jpg">
-			<img class="img" src="./midess_files/7.jpg">
-			<hr>
-			<a data-role="button" onclick="scrollTo(0,0)">Back to top</a>
-			</b>
-			</span>
-    </div>
-    <b>
-    </b></div>
 
 <div data-role="page" id="menu-hebrew" data-theme="a" data-title="mides" data-url="menu-hebrew">
 	<div data-role="content" id="hebMenu" class="kind-of-black heb-menu">

@@ -17,6 +17,10 @@ $(document).ready(function () {
             burgerMenu.toggleClass('menuClosed');
             burgerMenu.toggleClass('menuOpen');
         });
+
+        $( ".changeLanguage" ).click(function() {
+            $("body").toggleClass('english');
+        });
     }
 
     attachEvents();

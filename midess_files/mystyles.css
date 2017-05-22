@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 
+@font-face {
+    font-family: "gl-font";
+    src: url("fonts/GveretLevinAlefAlefAlef-Regular.woff") format('woff');
+}
+
 .img {
     height: auto;
     width: 100%;
@@ -182,9 +187,6 @@ Single-colored icons can be modified like so:
 #menuContainer{
     position: absolute;
 }
-.top-menu {
-    width: 17rem;
-}
 .menuLink.menuLink.menuLink {
     padding: 0 18px;
     float: left;
@@ -211,4 +213,25 @@ Single-colored icons can be modified like so:
     right: 0;
     background: white;
     width: 100%;
+    z-index: 1;
+}
+.ui-btn-corner-all {
+    z-index: 0;
+}
+:lang(en){
+    display: none;
+}
+.english :lang(he) {
+    display: none;
+}
+.english :lang(en) {
+    display: inline-block;
+}
+.mides-logo {
+    display: inline-block;
+    font-family: gl-font;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #e27d17;
+    float: left;
 }
